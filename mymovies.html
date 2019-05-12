@@ -5,49 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Filmid</title>
+  <title>My movies</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="../../style/addtohomescreen.css">
-  <script src="addtohomescreen.js"></script>
   <link rel="stylesheet" href="style.css">
-  <script src="movies.js" charset="utf-8"></script>
-  <script>
-  addToHomescreen();
-  </script>
+  <script src="mymovies.js" charset="utf-8"></script>
   <div class="header">
     <a href="index.html" class="logo">Track your movies/series</a>
     <div class="header-right">
-      <a class="active" href="movies.html">Movies</a>
+      <a href="movies.html">Movies</a>
       <a href="series.html">Series</a>
-      <div class="dropdown">
-    <button class="dropbtn">Progress list
-      <i class="fa fa-caret-down"></i>
+      <div class="dropdown active">
+    <button class="dropbtn active">Progress list
+      <i class="fa fa-caret-down active"></i>
     </button>
-    <div class="dropdown-content" style="float:right;">
-      <a href="mymovies.html">Movies</a>
+    <div class="dropdown-content active" style="float:right;">
+      <a class="active" href="mymovies.html">Movies</a>
       <a href="myseries.html">Completed series</a>
       <a href="myoseries.html">My other series</a>
     </div>
   </div>
     </div>
   </div>
-  <div class="wrap">
-    <div class="search">
-      <input type="text" id="title" class="searchTerm" placeholder="Movie name">
-      <button type="submit" id="searchMovie" class="searchButton">
-        <i class="fa fa-search"></i>
-      </button>
-     </div>
-  </div>
 </head>
 <body>
   <div id="Movies" class="movies">
   </div>
-
 <div id="popup1" class="overlay">
 </div>
   <br>
